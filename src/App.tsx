@@ -33,7 +33,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 font-sans text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+    <div className="min-h-screen bg-white font-sans text-slate-900 antialiased selection:bg-cyan-500 selection:text-white">
       {/* Top Header / Sticky Nav */}
       <Header onOpenModal={() => handleOpenModal()} />
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrench, Phone, MessageCircle, MapPin, Clock, ShieldCheck, Star, ChevronRight, Heart } from 'lucide-react';
+import { Wrench, Phone, MessageCircle, MapPin, Clock, ShieldCheck, Star, ChevronRight } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../config/business';
 import { SERVICES } from '../data/mockData';
 
@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
   };
 
   return (
-    <footer className="bg-slate-950 text-slate-400 text-xs border-t border-slate-800/80 pt-16 pb-24 lg:pb-12">
+    <footer className="bg-slate-950 text-slate-400 text-xs border-t border-slate-800 pt-16 pb-24 lg:pb-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Grid */}
@@ -38,10 +38,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                 <Wrench className="h-5 w-5" />
               </div>
               <div>
-                <span className="font-heading text-base font-bold text-white block">
+                <span className="font-heading text-base font-black text-white block">
                   {BUSINESS_CONFIG.name}
                 </span>
-                <span className="text-[11px] text-cyan-400 font-medium">
+                <span className="text-[11px] text-cyan-400 font-bold">
                   {BUSINESS_CONFIG.tagline}
                 </span>
               </div>
@@ -52,11 +52,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
             </p>
 
             <div className="flex items-center gap-2 pt-2">
-              <div className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 border border-slate-800 px-3 py-1.5 text-amber-400 font-semibold">
+              <div className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 border border-slate-800 px-3 py-1.5 text-amber-400 font-bold">
                 <Star className="h-3.5 w-3.5 fill-amber-400" />
                 <span>5.0 / 5.0 Google Puanı</span>
               </div>
-              <div className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 border border-slate-800 px-3 py-1.5 text-emerald-400 font-semibold">
+              <div className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 border border-slate-800 px-3 py-1.5 text-emerald-400 font-bold">
                 <ShieldCheck className="h-3.5 w-3.5" />
                 <span>Titiz İşçilik</span>
               </div>
@@ -65,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
 
           {/* Col 2: Services Quick Links (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">
+            <h3 className="text-sm font-black text-white uppercase tracking-wider">
               Teknik Hizmetlerimiz
             </h3>
             <ul className="space-y-2">
@@ -85,7 +85,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
 
           {/* Col 3: Fast Navigation (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">
+            <h3 className="text-sm font-black text-white uppercase tracking-wider">
               Hızlı Menü
             </h3>
             <ul className="space-y-2">
@@ -129,14 +129,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
 
           {/* Col 4: Contact & Hours (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider">
+            <h3 className="text-sm font-black text-white uppercase tracking-wider">
               İletişim & Çalışma
             </h3>
             <div className="space-y-2.5">
               <div className="flex items-start gap-2">
                 <Phone className="h-4 w-4 text-cyan-400 shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-slate-300 font-semibold block">Telefon:</span>
+                  <span className="text-slate-300 font-bold block">Telefon:</span>
                   <span>{BUSINESS_CONFIG.phonePlaceholder}</span>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
               <div className="flex items-start gap-2">
                 <MessageCircle className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-slate-300 font-semibold block">WhatsApp:</span>
+                  <span className="text-slate-300 font-bold block">WhatsApp:</span>
                   <span>{BUSINESS_CONFIG.whatsappPlaceholder}</span>
                 </div>
               </div>
@@ -152,7 +152,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-amber-400 shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-slate-300 font-semibold block">Adres & Bölge:</span>
+                  <span className="text-slate-300 font-bold block">Adres & Bölge:</span>
                   <span>{BUSINESS_CONFIG.location.addressPlaceholder}</span>
                 </div>
               </div>
@@ -160,7 +160,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
               <div className="flex items-start gap-2">
                 <Clock className="h-4 w-4 text-cyan-400 shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-slate-300 font-semibold block">Randevu & İletişim:</span>
+                  <span className="text-slate-300 font-bold block">Randevu & İletişim:</span>
                   <span>{BUSINESS_CONFIG.workingHours.summary}</span>
                 </div>
               </div>

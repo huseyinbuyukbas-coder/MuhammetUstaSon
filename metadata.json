@@ -1,0 +1,6 @@
+{
+  "name": "Muhammet Usta Klima ve Kombi Teknik Servisi",
+  "description": "Muhammet Usta Klima ve Kombi Teknik Servisi - Profesyonel klima ve kombi bakım, onarım, montaj ve teknik servis hizmetleri.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
